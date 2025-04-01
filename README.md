@@ -19,6 +19,7 @@ Y teniendo como restricción que solamente se podrán utilizar, además de la cl
 2. Codificar la solución en Java.
 3. Crear los tests unitarios que considere necesario para mostrar el correcto funcionamiento del
    módulo.
-<hr>
+
 # Diagrama de clases propuesto
+
 ![validador_diagrama.png](validador_diagrama.png)
