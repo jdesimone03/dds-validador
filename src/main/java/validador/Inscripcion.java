@@ -1,14 +1,19 @@
 package validador;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Inscripcion {
     private Alumno alumno;
     private List<Materia> materias;
 
-    public Inscripcion(List<Materia> materias, Alumno alumno) {
-        this.materias = materias;
+    public Inscripcion(Alumno alumno) {
         this.alumno = alumno;
+        this.materias = new ArrayList<>();
+    }
+
+    public void addMateria(Materia materia) {
+        this.materias.add(materia);
     }
 
     public Boolean aprobada() {

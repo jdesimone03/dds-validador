@@ -1,8 +1,11 @@
 package validador;
 
+import lombok.Getter;
+
 import java.util.ArrayList;
 import java.util.List;
 
+@Getter
 public class Alumno {
     private Integer legajo;
     private List<Materia> materiasAprobadas;
@@ -12,11 +15,7 @@ public class Alumno {
         this.materiasAprobadas = new ArrayList<>();
     }
 
-    public Integer getLegajo() {
-        return legajo;
-    }
-
-    public List<Materia> getMateriasAprobadas() {
-        return materiasAprobadas;
+    public void addMateriaAprobada(Materia materia) {
+        this.materiasAprobadas.add(materia);
     }
 }

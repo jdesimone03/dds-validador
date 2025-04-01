@@ -9,7 +9,11 @@ public class Materia {
 
     public Materia(String nombre) {
         this.nombre = nombre;
-        correlativas = new ArrayList<>();
+        this.correlativas = new ArrayList<>();
+    }
+
+    public void addCorrelativa(Materia materia) {
+        this.correlativas.add(materia);
     }
 
     public List<Materia> getCorrelativas() {
