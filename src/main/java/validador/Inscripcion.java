@@ -14,7 +14,8 @@ public class Inscripcion {
     public Boolean aprobada() {
         List<Materia> materiasAlumno = alumno.getMateriasAprobadas();
         for (Materia m : this.materias) {
-            if (!materiasAlumno.contains(m)) {
+            List<Materia> correlativas = m.getCorrelativas();
+            if (!materiasAlumno.containsAll(correlativas)) {
                 return false;
             }
         }
